@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic SEO -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Festival Budget Calculator | Plan Your Trip Costs</title>
+  <meta name="description" content="Easily calculate your festival trip expenses. Enter travel, stay, food, and miscellaneous costs to get an instant budget estimate for any festival.">
+  <meta name="keywords" content="festival budget calculator, trip cost estimator, festival travel planner, calculate festival expenses, holiday budget tool">
+
+  <!-- Open Graph (Facebook, WhatsApp) -->
+  <meta property="og:title" content="🎉 Festival Budget Calculator - Plan Your Festival Trip Costs">
+  <meta property="og:description" content="Quickly estimate your travel, stay, and food costs for any festival trip. Perfect for planning your budget.">
+  <meta property="og:image" content="https://example.com/festival-preview.jpg"> <!-- Replace with your image URL -->
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="🎉 Festival Budget Calculator - Plan Your Trip Costs">
+  <meta name="twitter:description" content="Estimate your total festival trip cost instantly. Travel, stay, food & more in one tool.">
+  <meta name="twitter:image" content="https://example.com/festival-preview.jpg"> <!-- Replace with your image URL -->
+
+  <!-- Favicon -->
+ <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Schema Markup (JSON-LD for Calculator Tool) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Festival Budget Calculator",
+    "operatingSystem": "All",
+    "applicationCategory": "FinanceApplication",
+    "description": "An online tool to calculate estimated costs for festival trips based on travel, accommodation, food, and miscellaneous expenses.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    }
+  }
+  </script>
+  <!-- Stylesheet -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🎉 Festival Budget Calculator 🎉</h1>
+  <p>Plan your festival trip expenses easily</p>
+</header>
+
+<div class="container">
+
+  <!-- Intro for SEO -->
+  <div class="intro">
+    Planning a trip for Diwali, Holi, Durga Puja, or any other festival?  
+    Use our <strong>Festival Budget Calculator</strong> to get an instant cost estimate.  
+    Just enter your travel, accommodation, food, and miscellaneous expenses, and know your budget before you pack your bags.
+  </div>
+  
+  <!-- Top AdSense Spot -->
+  <div class="adsense-placeholder">[AdSense Banner Here]</div>
+
+  <label>Festival Name:</label>
+  <input type="text" id="festival" placeholder="e.g., Diwali, Holi, Durga Puja">
+
+  <label>Number of Days:</label>
+  <input type="number" id="days" value="3" min="1">
+
+  <label>Travel Cost (one-time):</label>
+  <input type="number" id="travel" placeholder="e.g., 2000">
+
+  <label>Accommodation Cost per Day:</label>
+  <input type="number" id="stay" placeholder="e.g., 1500">
+
+  <label>Food Cost per Day:</label>
+  <input type="number" id="food" placeholder="e.g., 500">
+
+  <label>Miscellaneous Cost per Day:</label>
+  <input type="number" id="misc" placeholder="e.g., 200">
+
+  <button onclick="calculateBudget()">Calculate Budget</button>
+
+  <div class="result" id="result">
+    Your estimated budget will appear here.
+  </div>
+
+  <!-- Side AdSense Spot -->
+  <div class="adsense-placeholder">[AdSense Rectangle Ad Here]</div>
+
+</div>
+
+<footer>
+  &copy; 2025 Festival Budget Calculator | Estimates are approximate.
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
